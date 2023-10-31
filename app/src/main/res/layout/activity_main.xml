@@ -9,12 +9,13 @@
     android:gravity="center_horizontal|top"
     tools:context=".MainActivity">
 
+    <!-- Adicionado uma cor de fundo azul clara dentro de values/colors.xml -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Olá, leonardo.2023@hotmail.com"
+        android:text="Olá, Leonardo Rios !!!"
         android:textSize="18sp" />
 
     <ImageView
@@ -33,7 +34,7 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <!-- TextView indicando "Digite o ano" -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,7 +102,6 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"/>
 
-    <!-- TextView indicando "Digite o mês" -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
         android:layout_width="274dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="18sp"
-        android:text="Buscar Holerites"
+        android:text="Buscar Holerite"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -130,10 +130,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55sp"
         android:fontFamily="sans-serif-medium"
-        android:text="ARQUIVO NÃO EXISTENTE"
+        android:text="ARQUIVO NÃO ENCONTRADO"
         android:textAlignment="center"
-        android:textColor="#FF0007"
-        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textColor="#FA0202"
+        android:textSize="18sp"
+
         android:textStyle="bold" />
 
     <View
@@ -142,16 +144,40 @@
         android:layout_weight="1"
         android:visibility="invisible" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btSair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/backgraound_button"
-        android:text="Sair"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <!-- Adicionado o AppCompatButton, para o btConta e usar cor de fundo, no "@drawable/backgraound_button1"  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgraound_button1"
+            android:text="Conta"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+        <!--Função para o btSair, colocando uma cor de fundo vermelha, localizada no drawable-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgraound_button"
+            android:text="Sair"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>
