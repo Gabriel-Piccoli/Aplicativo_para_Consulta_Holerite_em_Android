@@ -27,12 +27,12 @@
         android:id="@+id/asterisk1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="288dp"
         android:scrollbarSize="14dp"
         android:text="*"
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
 
@@ -63,19 +63,21 @@
         app:layout_constraintTop_toBottomOf="@+id/cpfEditText" />
 
     <!-- Textview para CPF-->
+
+    <!--EditText para incluir o CPF-->
+
     <TextView
         android:id="@+id/cpfTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="188dp"
         android:text="Insira Seu CPF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
 
-    <!--EditText para incluir o CPF-->
     <EditText
         android:id="@+id/cpfEditText"
         android:layout_width="225dp"
@@ -101,6 +103,7 @@
         android:background="#0037FF"
         android:text="Entrar"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,9 +140,10 @@
         android:layout_height="54dp"
         android:onClick="sair"
         android:text="Sair"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.779" />
+        app:layout_constraintVertical_bias="0.666" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -117,6 +117,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/btnConsultarHolerite"
         android:layout_width="274dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="18sp"
@@ -125,17 +126,15 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewVisualizar"
+        android:id="@+id/tvMensagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55sp"
         android:fontFamily="sans-serif-medium"
-        android:text="ARQUIVO NÃO ENCONTRADO"
         android:textAlignment="center"
-        android:visibility="invisible"
-        android:textColor="#FA0202"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textColor="#00FF00"
         android:textSize="18sp"
-
         android:textStyle="bold" />
 
     <View

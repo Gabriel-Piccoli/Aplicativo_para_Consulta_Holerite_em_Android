@@ -15,12 +15,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private Button btnConsultarHolerite;
+    private TextView tvMensagem;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnConsultarHolerite = findViewById(R.id.btnConsultarHolerite);
+        tvMensagem = findViewById(R.id.tvMensagem);
         Button btSair = findViewById(R.id.btSair); //Variavel para relacionar executar o bt sair
         AppCompatButton btConta = findViewById(R.id.btConta); //Variavel para executar o bt Conta
 
@@ -34,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> mesAdapter = ArrayAdapter.createFromResource(this, R.array.meses_array, android.R.layout.simple_spinner_item);// recebe os meses do res/values/strings.xml
         mesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMes.setAdapter(mesAdapter);
+
+        btnConsultarHolerite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                exibirMensagem();
+            }
+        });
 
         btConta.setOnClickListener(new View.OnClickListener() { //configuração para acessar a MainConfiguration pelo btConta
             @Override
@@ -57,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
         }
         return anos; //retorna o ano selecionado ao usuário
     }
+    private void exibirMensagem() {
+        // Lógica para consultar o holerite (adicionar aqui)
 
+        // Exibe a mensagem quando o botão é clicado
+        tvMensagem.setText("Arquivo do holerite encontrado!");
+    }
 
 }
